@@ -58,3 +58,11 @@ Takes the user's inserted location, language, unit type, and OpenWeatherMap API 
 add:
 	
 	@/usr/bin/chromium --noerrdialogs --kiosk --incognito "http://localhost/MagicMirror"
+
+then:
+
+	sudo nano /boot/config.txt
+
+add:
+	display_rotate=3
+	hdmi_mode=4
