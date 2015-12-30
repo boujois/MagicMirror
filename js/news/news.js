@@ -82,11 +82,13 @@ news.parseFeed = function (data) {
 	var _rssItems = [];
 
 	for (var i = 0, count = data.length; i < count; i++) {
-
+		if(data[i].title.substring(0,5)=="VIDEO"){
+			continue;
+		}
 		_rssItems.push(data[i].title);
 
 	}
-
+	console.log(_rssItems);
 	this.newsItems = this.newsItems.concat(_rssItems);
 
 	return true;
