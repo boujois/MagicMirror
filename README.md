@@ -50,3 +50,11 @@ Takes the user's inserted location, language, unit type, and OpenWeatherMap API 
 
 **Current features:** FRITZ!Box Callmonitor <br>
 **Future features:** Faceregognition, personalized views, online banking through HBCI and multiple calenders based on faceregognition.
+
+##Pi Config
+
+	sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+
+add:
+	
+	@/usr/bin/chromium --noerrdialogs --kiosk --incognito "http://localhost/MagicMirror"
