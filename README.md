@@ -66,3 +66,4 @@ then:
 add:
 	display_rotate=3
 	hdmi_mode=4
+	avoid_warnings=1
